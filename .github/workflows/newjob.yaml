@@ -1,0 +1,14 @@
+name: New work flow
+'on':
+  pull_request:
+    branches:
+      - test
+  workflow_dispatch:
+jobs:
+  newjob:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: checkouttest
+        run: echo "running checkout here"
+        shell: bash
