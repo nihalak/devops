@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: checkout@v3
+      - name: small test
+        run: echo "Hello World test"
       - name: node install
         uses: actions/setup-node@v4.1.0
       - name: npm install, build and test
