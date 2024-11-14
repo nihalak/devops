@@ -7,7 +7,7 @@ jobs:
   complete:
     runs-on: ubuntu-latest
     steps:
-      - uses: checkout@v3
+      - uses: actions/checkout@v3
       - name: small test
         run: echo "Hello World test"
       - name: node install
